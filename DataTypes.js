@@ -2,7 +2,7 @@
 
 /* Declaring variables using var */
 var age = 32, first_name = 'Jack';
-console.log("First name is :: "+first_name+ " of age :: "+age)
+console.log("First name is :: " + first_name + " of age :: " + age)
 
 /* String with double quotes */
 var string_option_01 = "Jack's car";
@@ -20,3 +20,5 @@ let x = 12;
 var isUrlValid = true
 
 /* Objects */
+const car = { "type": "Fiat", "model": "500", "color": "white" };
+console.log(car.model, car.type, car['color']);
