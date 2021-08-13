@@ -9,3 +9,12 @@ sudo docker pull node
 sudo docker run -it -d --name node_container node bash
 sudo docker exec -it node_container /bin/bash
 ```
+
+#### Objects
+Objects in JS are key-value pair datasets. 
+
+#### Arrays
+Arrays are like object but without a key and does keep the order in which data is stored. Arrays can contain objects. Also array can contain any type of data combinations. 
+```js
+var arrayExample = ['Strings', 10, {'objects': 'yes'}, true]
+```

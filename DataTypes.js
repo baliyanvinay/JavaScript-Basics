@@ -22,3 +22,8 @@ var isUrlValid = true
 /* Objects */
 const car = { "type": "Fiat", "model": "500", "color": "white" };
 console.log(car.model, car.type, car['color']);
+
+/* Arrays : Keeps the order of data */
+var weekList = ['Sunday', 'Monday', 'Tuesday']
+var objArray = [car]
+var mixedArray = ['Some string', 12, false, { 'objects': 'yes' }]
