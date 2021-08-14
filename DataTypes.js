@@ -27,3 +27,8 @@ console.log(car.model, car.type, car['color']);
 var weekList = ['Sunday', 'Monday', 'Tuesday']
 var objArray = [car]
 var mixedArray = ['Some string', 12, false, { 'objects': 'yes' }]
+console.log("Length of array is " + mixedArray.length)
+// Accessing arrays values
+weekList[1]
+weekList.push('Wednessday')
+weekList.pop()

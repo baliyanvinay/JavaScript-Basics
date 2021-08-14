@@ -14,7 +14,7 @@ sudo docker exec -it node_container /bin/bash
 Objects in JS are key-value pair datasets. 
 
 #### Arrays
-Arrays are like object but without a key and does keep the order in which data is stored. Arrays can contain objects. Also array can contain any type of data combinations. 
+Arrays are like object but without a key and does keep the order in which data is stored. Arrays can contain objects. Also array can contain any type of data combinations. Data can be accessed from arrays using indexes. 
 ```js
 var arrayExample = ['Strings', 10, {'objects': 'yes'}, true]
 ```
