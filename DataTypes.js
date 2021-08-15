@@ -24,11 +24,13 @@ const car = { "type": "Fiat", "model": "500", "color": "white" };
 console.log(car.model, car.type, car['color']);
 
 /* Arrays : Keeps the order of data */
-var weekList = ['Sunday', 'Monday', 'Tuesday']
-var objArray = [car]
-var mixedArray = ['Some string', 12, false, { 'objects': 'yes' }]
-console.log("Length of array is " + mixedArray.length)
+var weekList = ['Sunday', 'Monday', 'Tuesday'];
+var objArray = [car];
+var mixedArray = ['Some string', 12, false, { 'objects': 'yes' }];
+console.log("Length of array is " + mixedArray.length);
 // Accessing arrays values
-weekList[1]
-weekList.push('Wednessday')
-weekList.pop()
+weekList[1];
+weekList.push('Wednessday');
+weekList.pop();
+weekList.splice(start=0, 1); //delete one number from begining
+console.log(weekList);
