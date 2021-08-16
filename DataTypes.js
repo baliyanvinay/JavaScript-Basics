@@ -31,5 +31,9 @@ console.log("Length of array is " + mixedArray.length);
 weekList[1];
 weekList.push('Wednessday');
 weekList.pop();
-weekList.splice(start=0, 1); //delete one number from begining
+weekList.splice(start = 0, 1); //delete one number from begining
 console.log(weekList);
+
+/* Checking types of data types */
+let num = '12';
+console.log(typeof num)

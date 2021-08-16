@@ -18,3 +18,5 @@ Arrays are like object but without a key and does keep the order in which data i
 ```js
 var arrayExample = ['Strings', 10, {'objects': 'yes'}, true]
 ```
+
+##### Equality Check
