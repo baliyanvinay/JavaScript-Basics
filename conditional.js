@@ -1,6 +1,6 @@
 /* Strict equality */
-let config_val = 12;
-let match_val = 12;
+var config_val = 12;
+var match_val = 12;
 console.log(config_val === match_val);
 // loose check || all true
 'one' == '1';
@@ -13,10 +13,10 @@ console.log(config_val === match_val);
 
 /* if else */
 if ('one' === null) {
-    console.log(true)
+    console.log(true);
 }
 else {
-    console.log(false)
+    console.log(false);
 }
 // Single if
 if (1 === 1) console.log('Oneliner if');
