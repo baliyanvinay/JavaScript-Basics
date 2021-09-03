@@ -20,3 +20,7 @@ var arrayExample = ['Strings', 10, {'objects': 'yes'}, true]
 ```
 
 ##### Equality Check
+
+#### Functions
+- Functions in JS are class one objects which means functions can be assigned to variables, can be passed to another functions. Functions are basically inherited from 'Function' objects.
+- Functions can be defined as a property of an object.  
