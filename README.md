@@ -4,7 +4,13 @@ JavaScript(or JS) is a lightweight, interpreted, object-oriented language with f
 ### Details on terms used
 - Lightweight: JavaScript does not have too many language constructs(loops, conditionals) that you can use for building your code. Meaning it ships with the basic constructs that can be used almost too freely, whichever use case we need to cover.
 - Interpreted: the source code is read and directly executed, line by line. 
-- Object-oriented language: Language that supports inheritance, encapsulation, abstraction and polymorphism.
+- Object-oriented language: Language that supports inheritance, encapsulation, abstraction and polymorphism. Has blueprints and instances i.e., classes & objects
+- First-class functions: 
+- Protype-based:
+- Multi-paradigm Scripting:
+- Dynamic:
+- Imperative programming:
+- Functional programming:
 
 ## Is JavaScript an interpreted language?
 According to its definition, JavaScript is an interpreted language meaning it executes code line by lines. However consider the below example.
@@ -33,3 +39,5 @@ Simple check for any programming language would be to see if it passes the four 
 ### Encapsulation
 ### Abstraction
 ### Polymorphism
+
+## Explain First-class functions in JavaScript
