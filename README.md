@@ -5,7 +5,7 @@ JavaScript(or JS) is a lightweight, interpreted, object-oriented language with f
 - Lightweight: JavaScript does not have too many language constructs(loops, conditionals) that you can use for building your code. Meaning it ships with the basic constructs that can be used almost too freely, whichever use case we need to cover.
 - Interpreted: the source code is read and directly executed, line by line. 
 - Object-oriented language: Language that supports inheritance, encapsulation, abstraction and polymorphism. Has blueprints and instances i.e., classes & objects
-- First-class functions: 
+- First-class functions: Where functions are treated as any other variable. Passed as argument, returned from a function & assigned to a variable.
 - Protype-based:
 - Multi-paradigm Scripting:
 - Dynamic:
@@ -41,3 +41,29 @@ Simple check for any programming language would be to see if it passes the four 
 ### Polymorphism
 
 ## Explain First-class functions in JavaScript
+First-class function is termed to those function in a programming language where the function can be <br>
+- passed as an argument to another function
+- returned from another function
+- assigned to a variable
+### Example
+```js
+var rand = function() {
+    // random number b/w 1 and 100
+    return Math.floor(Math.random()*100);
+}
+
+function isEven(func) {
+    var num = func();
+    console.log("Random Number :: "+num);
+    return function {
+        console.log((num%2==0));
+    }
+}
+
+isEven(rand);
+isEven(rand)(); // to call the retuned function
+
+// another way to call 
+var output = isEven(rand);
+output();
+```
