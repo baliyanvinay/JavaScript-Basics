@@ -6,7 +6,7 @@ JavaScript(or JS) is a lightweight, interpreted, object-oriented language with f
 - Interpreted: the source code is read and directly executed, line by line. 
 - Object-oriented language: Language that supports inheritance, encapsulation, abstraction and polymorphism. Has blueprints and instances i.e., classes & objects
 - First-class functions: Where functions are treated as any other variable. Passed as argument, returned from a function & assigned to a variable.
-- Protype-based:
+- Protype-based: 
 - Multi-paradigm Scripting:
 - Dynamic:
 - Imperative programming:
@@ -64,3 +64,7 @@ isEven(rand)(); // to call the retuned function
 var output = isEven(rand);
 output();
 ```
+<b>Important Notes:</b> 
+<br>The function that we pass as an argument to another function, is called a <b>Callback function</b>.
+<br>A function that returns a function is called a <b>Higher-Order Function</b>.
+<br>Ref: [First-class Function](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function)
