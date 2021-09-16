@@ -10,7 +10,6 @@ JavaScript(or JS) is a lightweight, interpreted, object-oriented language with f
 According to its definition, JavaScript is an interpreted language meaning it executes code line by lines. However consider the below example.
 ```js
 max(3,5);
-
 function max(a,b) {
     if(a>b) {
         return a;
@@ -25,5 +24,5 @@ Coming back to interpreted question, consider another example
 console.log("Executed!!");
 wrong_syntax;
 ```
-What happens now? Well here the language will show you why it is called interpreted. The first line will be executed and then it will throw you the error for second line. Had it been compiled, it would have never executed the first line. 
-Ref: https://almogad.medium.com/javascript-is-it-compiled-or-interpreted-9779278468fc
+What happens now? Well here the language will show you why it is called interpreted. The first line will be executed and then it will throw you the error for second line. Had it been compiled, it would have never executed the first line. <br>
+Ref: [JavaScript — is it Compiled or Interpreted?](https://almogad.medium.com/javascript-is-it-compiled-or-interpreted-9779278468fc)
