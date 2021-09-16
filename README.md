@@ -51,7 +51,6 @@ var rand = function() {
     // random number b/w 1 and 100
     return Math.floor(Math.random()*100);
 }
-
 function isEven(func) {
     var num = func();
     console.log("Random Number :: "+num);
@@ -59,10 +58,8 @@ function isEven(func) {
         console.log((num%2==0));
     }
 }
-
 isEven(rand);
 isEven(rand)(); // to call the retuned function
-
 // another way to call 
 var output = isEven(rand);
 output();
