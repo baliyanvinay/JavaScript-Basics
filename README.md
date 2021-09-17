@@ -93,3 +93,31 @@ console.info(emp_01);
 Person.prototype.gender = 'male';
 console.info(emp_01.gender);
 ```
+
+## Class based object creation vs function based
+```js
+class Person {
+    constructor (name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    getBirthYear() {
+        const curr_year = new Date().getFullYear();
+        return curr_year-this.age;
+    }
+}
+const person_01 = new Person('Tom', 27);
+console.log(person_01.getBirthYear());
+```
+```js
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+Person.prototype.getBirthYear = function() {
+    const curr_year = new Date().getFullYear();
+    return curr_year-this.age;
+}
+const person_01 = new Person('Tom', 27);
+console.log(person_01.getBirthYear());
+```
