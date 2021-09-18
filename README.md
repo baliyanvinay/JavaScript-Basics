@@ -4,9 +4,9 @@ JavaScript(or JS) is a lightweight, interpreted, object-oriented language with f
 ### Details on terms used
 - Lightweight: JavaScript does not have too many language constructs(loops, conditionals) that you can use for building your code. Meaning it ships with the basic constructs that can be used almost too freely, whichever use case we need to cover.
 - Interpreted: the source code is read and directly executed, line by line. 
-- Object-oriented language: Language that supports inheritance, encapsulation, abstraction and polymorphism. Has blueprints and instances i.e., classes & objects
+- Object-oriented: Object-oriented is a whole programming paradigm based around objects (data structures) that contain data fields and methods. Note that this doesn't necessarily means class and objects. 
 - First-class functions: Where functions are treated as any other variable. Passed as argument, returned from a function & assigned to a variable.
-- Protype-based: 
+- Protype-based: A prototype based object oriented language uses objects for inheritance, for example an employee object has Person object as its prototype.
 - Multi-paradigm Scripting:
 - Dynamic:
 - Imperative programming:
@@ -68,3 +68,28 @@ output();
 <br>The function that we pass as an argument to another function, is called a <b>Callback function</b>.
 <br>A function that returns a function is called a <b>Higher-Order Function</b>.
 <br>Ref: [First-class Function](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function)
+
+## Why is JavaScript called a object-oriented programming language?
+JavaScript is an object-oriented programming language. Now there are couple of way an OOP language implements this, for example, generally mosts are class-based OOP and some like JavaScript are prototype based OOP.
+
+### Difference between a class-based and prototype based OOP language
+In class-based language, the classes are created beforehand and the objects are instantiated based on the classes. For example, 'Fruit' class with 'Apple' & 'Mango' as objects.<br>
+- In prototype-based languages the objects are the primary entities. No classes even exist. 
+- The prototype of an object is just another object to which the object is linked. Every object has one prototype link (and only one).
+- Only single inheritance can be implemented through the prototype. 
+
+## Why is JavaScript called a prototype based programming language?
+To provide inheritance in JavaScript, objects can have a prototype object, which acts as a template object that it inherits methods and properties from.<br>
+This prototype object can also have a prototype object and so on. This is often referred to as a prototype chain.
+```js
+// Constructor function
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+const emp_01 = new Person('Ajay',23);
+console.info(emp_01);
+//Adding a property via prototype
+Person.prototype.gender = 'male';
+console.info(emp_01.gender);
+```
