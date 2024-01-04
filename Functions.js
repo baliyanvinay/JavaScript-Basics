@@ -6,12 +6,16 @@ function isEven(num) {
         return false;
     }
 }
+
+// or using the new ES6 arrow function
+const isEven = num => num % 2 == 0 ? true : false;
+
 // calling function
 var response = isEven(5);
 console.log(response);
 
 // function with default argument
-function helloWorld(text="Hello Someone!") {
+function helloWorld(text = "Hello Someone!") {
     return text;
 }
 console.log(helloWorld("Hello Sam!"));
@@ -45,4 +49,4 @@ function change_year_val(vehicle) {
 }
 
 var new_car = change_year_val(car);
-console.log("Car is ",car,"|| New car is ",new_car);
+console.log("Car is ", car, "|| New car is ", new_car);

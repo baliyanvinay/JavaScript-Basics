@@ -19,18 +19,18 @@ var x = 12;
 var isUrlValid = true;
 
 /* Objects */
-var car = {"type": "Fiat", "model": "500", "color": "white"};
+var car = { "type": "Fiat", "model": "500", "color": "white" };
 console.log(car.model, car.type, car.color);
 
 /* Arrays : Keeps the order of data */
 var weekList = ['Sunday', 'Monday', 'Tuesday'];
 var objArray = [car];
-var mixedArray = ["Some string", 12, false, {"objects": "yes"}];
+var mixedArray = ["Some string", 12, false, { "objects": "yes" }];
 console.log("Length of array is " + mixedArray.length);
 // Accessing arrays values
 weekList.push('Wednessday');
 weekList.pop();
-weekList.concat(['Wednessday','Thursday']);
+weekList.concat(['Wednessday', 'Thursday']);
 weekList.includes('Sunday');
 weekList.splice(0, 1); //delete one number from begining
 weekList.length;

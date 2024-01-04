@@ -33,6 +33,6 @@ switch ('one' !== 'one') {
 }
 
 /* Ternary Operator */
-(1 === 1)? console.log(true) : console.log(false);
-let result = (1 === 1)? true : false;
+(1 === 1) ? console.log(true) : console.log(false);
+let result = (1 === 1) ? true : false;
 console.log("Result " + result)
