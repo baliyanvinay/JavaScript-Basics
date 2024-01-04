@@ -30,7 +30,10 @@ console.log("Length of array is " + mixedArray.length);
 // Accessing arrays values
 weekList.push('Wednessday');
 weekList.pop();
+weekList.concat(['Wednessday','Thursday']);
+weekList.includes('Sunday');
 weekList.splice(0, 1); //delete one number from begining
+weekList.length;
 console.log(weekList);
 
 /* Checking types of data types */
