@@ -134,9 +134,7 @@ class Person {
 }
 const person = new Person('Tom', 27);
 console.log(person.name);
-```
 
-```js
 // function based object creation
 function Person(name, age) {
     this.name = name;
@@ -159,9 +157,6 @@ class Person {
         this.age = age;
     }
 }
-```
-
-```js
 // class with expression
 const Person = class {
     constructor (name, age) {
@@ -214,8 +209,35 @@ const Person = class {
     static creationMsg() {
         return "Person object created."
     }
+    // instance method
+    showDetails() {
+        return `${this.name} is ${this.age} old`;
+    }
 };
 
 const person = new Person("Ajay", 12);
 console.info(Person.creationMsg());
+console.info(person.showDetails());
+
+// update method using prototype
+Person.prototype.showDetails = function(){ return this.name};
+```
+
+```js
+// visibility - private
+const Person = class {
+    #age;
+    constructor (name, age) {
+        this.name = name;
+        this.#age = age;
+    }
+    showDetails() {
+        return `${this.name} is ${this.#age} old`;
+    }
+
+};
+
+const person = new Person("Ajay", 12);
+console.info(person.showDetails());
+// console.info(person.#age); // access not possible
 ```
